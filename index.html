@@ -129,7 +129,7 @@
 function MyJsFunction(param1) {
 
     if (typeof cacheUnityInstance !== "undefined") {
-        cacheUnityInstance.SendMessage("WebViewBrige", "OnJsFunctionCalled", param1 + ";");        
+        cacheUnityInstance.SendMessage("WebViewBrige", "OnReceiveFromHub", param1 + ";");        
     }
 }
 
