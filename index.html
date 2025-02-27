@@ -126,25 +126,6 @@
               });
             };
 
-function MyJsFunction(param1) {
-
-    if (typeof cacheUnityInstance !== "undefined") {
-        cacheUnityInstance.SendMessage("WebViewBrige", "OnReceiveFromHub", param1 + ";");        
-    }
-}
-
-function Maximaze() {
-
-    if (typeof cacheUnityInstance !== "undefined") {
-        cacheUnityInstance.SetFullscreen(1);        
-    }
-}
-function Minimaze() {
-
-    if (typeof cacheUnityInstance !== "undefined") {
-        cacheUnityInstance.SetFullscreen(0);        
-    }
-}
       document.body.appendChild(script);
 
     </script>
