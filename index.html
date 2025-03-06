@@ -109,12 +109,14 @@
 
       loadingBar.style.display = "block";
 
+      var cacheUnityInstance;
       var script = document.createElement("script");
       script.src = loaderUrl;
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
               }).then((unityInstance) => {
+                cacheUnityInstance = unityInstance;
                 loadingBar.style.display = "none";
                 fullscreenButton.onclick = () => {
                   unityInstance.SetFullscreen(1);
@@ -125,6 +127,11 @@
             };
 
       document.body.appendChild(script);
+
+      function SendDataToGameView(param1) {
+        cacheUnityInstance.SendMessage('UniWebViewBridge','OnReceiveFromHub', param1);
+      }
+
     </script>
   </body>
 </html>
