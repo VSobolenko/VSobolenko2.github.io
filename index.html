@@ -115,6 +115,7 @@
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
+          window.location = "uniwebview://progress?value=" + progress;
               }).then((unityInstance) => {
                 cacheUnityInstance = unityInstance;
                 loadingBar.style.display = "none";
