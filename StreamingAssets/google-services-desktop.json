@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "606221986588",
+    "project_id": "pets-world-959b0",
+    "storage_bucket": "pets-world-959b0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606221986588:android:68a843be3d7b748e84e8d9",
+        "android_client_info": {
+          "package_name": "pets.world"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIS-pJQ1vouYPoKkWDy3klDD1Oqwt8aik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606221986588:android:7c007c874d19d3db84e8d9",
+        "android_client_info": {
+          "package_name": "pets.world.amz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIS-pJQ1vouYPoKkWDy3klDD1Oqwt8aik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606221986588:android:2d4428f663591a2b84e8d9",
+        "android_client_info": {
+          "package_name": "pets.world.smg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIS-pJQ1vouYPoKkWDy3klDD1Oqwt8aik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
