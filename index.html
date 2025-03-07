@@ -59,9 +59,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/a0eb54968f12b724932ff61ec1f2137c.loader.js";
       var config = {
-        dataUrl: buildUrl + "/adaf0c9f909e9579379678204720ea37.data",
+        dataUrl: buildUrl + "/7ed2daf5df261f2896e51b1440ee6ed2.data",
         frameworkUrl: buildUrl + "/e4dc8a54f3e180aeb96fc834da5c1496.framework.js",
-        codeUrl: buildUrl + "/664a97027f6bb89b9add0fb563c9fb7a.wasm",
+        codeUrl: buildUrl + "/21e5778199fc4ecd5b9b09b86cdee477.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Kids Games LLC",
         productName: "Pet World",
@@ -109,7 +109,6 @@
 
       loadingBar.style.display = "block";
 
-var cacheUnityInstance;
       var script = document.createElement("script");
       script.src = loaderUrl;
       script.onload = () => {
@@ -117,7 +116,6 @@ var cacheUnityInstance;
           progressBarFull.style.width = 100 * progress + "%";
               }).then((unityInstance) => {
                 loadingBar.style.display = "none";
-                cacheUnityInstance = unityInstance;
                 fullscreenButton.onclick = () => {
                   unityInstance.SetFullscreen(1);
                 };
