@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | WebGL Project Empty</title>
+    <title>Unity WebGL Player | Pet World</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">WebGL Project Empty</div>
+        <div id="unity-build-title">Pet World</div>
       </div>
     </div>
     <script>
@@ -57,15 +57,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Builds.loader.js";
+      var loaderUrl = buildUrl + "/a0eb54968f12b724932ff61ec1f2137c.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Builds.data",
-        frameworkUrl: buildUrl + "/Builds.framework.js",
-        codeUrl: buildUrl + "/Builds.wasm",
+        dataUrl: buildUrl + "/703bc6e72bf431b63ef47799e5121d60.data",
+        frameworkUrl: buildUrl + "/119720953208a44cb0c428ee454d3a71.framework.js",
+        codeUrl: buildUrl + "/893c749035e86a54f113e4113a0b6841.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "WebGL Project Empty",
-        productVersion: "1.0",
+        companyName: "Kids Games LLC",
+        productName: "Pet World",
+        productVersion: "0.0.27",
         showBanner: unityShowBanner,
       };
 
@@ -86,7 +86,6 @@
       // expected to change.
 
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        
         // Mobile device style: fill the whole browser client area with the game canvas:
 
         var meta = document.createElement('meta');
@@ -109,13 +108,14 @@
       }
 
       loadingBar.style.display = "block";
-
+      
       var cacheUnityInstance;
       var script = document.createElement("script");
       script.src = loaderUrl;
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
+          window.location = "uniwebview://progress?value=" + progress;
               }).then((unityInstance) => {
                 loadingBar.style.display = "none";
                 cacheUnityInstance = unityInstance;
